@@ -1,6 +1,6 @@
 # Hospital Appointment No-Show Prediction
 
-Demo video: https://www.loom.com/share/1205d1910e304da3bf48f5adf1a537f6
+Demo video: https://www.loom.com/share/c0a63371dfc845c79ccba46e50c89501
 
 Predicts the probability that an appointment will be missed, so staff can plan human-reviewed reminders
 and scheduling buffers. It never predicts diagnosis, urgency or clinical outcomes.
@@ -9,6 +9,19 @@ and scheduling buffers. It never predicts diagnosis, urgency or clinical outcome
 * **Target:** `no_show` (1 = missed)
 * **Prediction time:** when the appointment is booked (only information known then is used)
 * **Data:** fully synthetic (`src/generate_data.py`, seeded) - no real patient data
+
+## Technology Stack
+
+- **Language:** Python
+- **Data Processing:** Pandas, NumPy
+- **Machine Learning:** Scikit-learn, XGBoost
+- **Model Calibration:** Isotonic Regression
+- **Backend:** FastAPI
+- **Data Validation:** Pydantic
+- **Model Serialization:** Joblib
+- **Dashboard:** Streamlit
+- **API Documentation:** Swagger UI
+- **Testing:** Pytest
 
 ## End-to-End Architecture
 
@@ -45,10 +58,15 @@ All trained model artifacts and associated metadata are versioned in `models/`:
 
 ## Setup
 
-```bash
-python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
+
+# Create virtual environment
+python -m venv .venv
+
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+
+# Install dependencies
 pip install -r requirements.txt
-```
 
 ## Reproduce everything (from the repo root)
 
@@ -107,5 +125,13 @@ needs monitoring/re-training for drift. Human review is mandatory.
 
 ## AI Assistance Statement
 
-AI tools (ChatGPT, Claude and the Antigravity coding agent) helped me plan the project, generate the code and draft the report text. I ran and tested everything on my own computer, chose the experiments, checked every number against the output files, and I can explain the whole project.
+## AI Assistance and Contributions
+
+AI tools, including ChatGPT, Claude, and the Antigravity coding agent, were used to assist with project planning, code development, debugging, and report drafting.
+
+My contributions included setting up and running the project locally, testing the FastAPI backend, executing prediction requests through Swagger UI, reviewing the model outputs, updating the technical report, and documenting the project demonstration.
+
+I reviewed the implementation and results to understand the workflow and can explain the major components of the project.
+
+Original project author and repository history are retained where applicable.
 
