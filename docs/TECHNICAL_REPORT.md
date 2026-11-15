@@ -1,6 +1,6 @@
 # Technical Report: Hospital Appointment No-Show Prediction
 
-Candidate: Annamneedi Suresh Kumar | Reg. no: 12317960 | Role: AI & Machine Learning
+Candidate: Ampolu Tirumala Sri | Reg. no: 12312672 | Role: AI & Machine Learning
 Demo video: https://www.loom.com/share/1205d1910e304da3bf48f5adf1a537f6
 
 All metrics below were computed directly by running `python -m src.train` with fixed random seed 42.
