@@ -1,7 +1,7 @@
 # Technical Report: Hospital Appointment No-Show Prediction
 
 Candidate: Ampolu Tirumala Sri | Reg. no: 12312672 | Role: AI & Machine Learning
-Demo video: https://www.loom.com/share/1205d1910e304da3bf48f5adf1a537f6
+Demo video: https://www.loom.com/share/c0a63371dfc845c79ccba46e50c89501
 
 All metrics below were computed directly by running `python -m src.train` with fixed random seed 42.
 
